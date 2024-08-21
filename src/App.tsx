@@ -2,6 +2,7 @@
 /* import solidLogo from './assets/solid.svg'
 import viteLogo from '/vite.svg' */
 import './App.css'
+import { ObsEventListener } from './ObsEventListener'
 
 function App() {
   /* const [count, setCount] = createSignal(0) */
@@ -15,6 +16,7 @@ function App() {
   return (
     <>
       <p>return {obs.pluginVersion}</p>
+      <ObsEventListener obs={obs} />
     </>
   )
 }
